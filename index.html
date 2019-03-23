@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Browser interpretation of the classic Nokia game Snake">
+		<meta name="keywords" content="snake, game, nokia">
+		<meta name="author" content="Michael J Peppers <MJPeppersdev@protonmail.com>">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nokia Snake</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	</head>
+    
+    <body>
+        <a id="github-link" href="https://github.com/MJPeppersdev" target="_blank"></a>
+        <div class="container">
+            <div class="score">
+                score: <span class="score_val">0</span>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas width="400" height="400"></canvas>
+            </div>
+            <div class="controls">
+                <button class="btn-start">Start</button>
+                <button class="btn-pause">Pause</button>
+                <div class="range range-difficulty">
+                    <label for="difficulty">Speed</label>
+                    <div class="range_inputWrapper">
+                        <span class="range_inputSlider"></span>
+                        <div class="range_inputValue"></div>
+                        <input type="range" name="difficulty" value="8" min="1" max="10" step="1" >
+                    </div>
+                </div>
+
+                <div class="range range-columns">
+                    <label for="columns">Cells</label>
+                    <div class="range_inputWrapper">
+                        <span class="range_inputSlider"></span>
+                        <div class="range_inputValue"></div>
+                        <input type="range" name="columns" value="20" min="10" max="100" step="10">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
